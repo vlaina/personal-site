@@ -1,0 +1,4 @@
+title: "Vicky Laina"
+description: "Personal academic website"
+markdown: kramdown
+permalink: /:basename/

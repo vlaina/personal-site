@@ -1,0 +1,88 @@
+/* style.css - Minimalist, bright-accented academic theme */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: #fff;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  header {
+    background: #f8f9fb;
+    border-bottom: 1px solid #ececec;
+    padding: 1.25em 0 1em 0;
+  }
+  nav {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1.06em;
+  }
+  nav a {
+    color: #0077FF;
+    text-decoration: none;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s;
+  }
+  nav a:hover, nav a:focus, nav a.active {
+    border-bottom: 2px solid #fcb900;
+  }
+  main {
+    max-width: 700px;
+    margin: 3em auto;
+    padding: 0 1.5em;
+  }
+  footer {
+    text-align: center;
+    color: #888;
+    font-size: 0.93em;
+    margin: 4em 0 2em 0;
+  }
+  h1, h2, h3 {
+    color: #183153;
+    font-weight: 600;
+    margin-top: 1.3em;
+  }
+  h1 {
+    font-size: 2.1em;
+  }
+  h2 {
+    font-size: 1.35em;
+  }
+  img.profile {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+    border: 3px solid #fcb900;
+    box-shadow: 0 2px 8px #eee;
+  }
+  ul, ol {
+    margin-left: 1.3em;
+  }
+  a {
+    color: #0d47a1;
+    transition: color 0.2s;
+  }
+  a:hover {
+    color: #fcb900;
+  }
+  @media (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      gap: 1em;
+    }
+    main {
+      margin: 1.5em 0;
+      padding: 0 1em;
+    }
+    img.profile {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  

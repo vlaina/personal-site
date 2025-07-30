@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Vicky Laina – Personal Academic Website{% endif %}" />
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Vicky Laina</title>
+  <link rel="stylesheet" href="{{ '/assets/style2.css' | relative_url }}" />
+</head>
+<body>
+  {% include header.html %}
+  <main>
+    {% if page.content_style == false %}
+    {{ content }}
+  {% else %}
+    <section class="content">
+      {{ content }}
+    </section>
+  {% endif %}
+  </main>
+  {% include footer.html %}
+
+  <script src="{{ '/assets/script.js' | relative_url }}"></script>
+
+</body>
+</html>
